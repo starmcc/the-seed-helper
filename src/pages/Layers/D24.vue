@@ -26,7 +26,7 @@ export default {
         Aplayer
     },
     data: () => ({
-        music: { title: '弓箭手村', artist: ' ', src: 'bgm/1.mp3' },
+        music: MusicData[0],
         MusicData, TipsData
     }),
     created() {

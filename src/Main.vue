@@ -16,6 +16,7 @@
       </el-aside>
       <el-container>
         <el-main>
+          <p style="font-size: 26px;">{{ $route.meta.title }}</p>
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -26,6 +27,9 @@
 <script>
 export default {
   name: 'App',
+  created(){
+    console.info(this.$route.meta.title)
+  }
 }
 </script>
 
