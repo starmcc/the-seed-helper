@@ -21,5 +21,5 @@ function buildDData(numbers) {
 
 
 export default new Router({
-    routes: buildDData([17, 22, 23, 24, 27, 39])
+    routes: buildDData([17, 22, 23, 24, 27, 39, 42, 48])
 })

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-image style="max-width: 600px" :src="url" :preview-src-list="[url]"></el-image>
+        <el-image class="show-image" fit="scale-down" lazy :src="url" :preview-src-list="url"></el-image>
     </div>
 </template>
 
