@@ -23,6 +23,6 @@ function buildDData(data) {
 
 
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
     routes: buildDData(LayersData)
 })
