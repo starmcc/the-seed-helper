@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
+import LayersData from '@/commons/js/LayersData'
 Vue.use(Router)
 
 
@@ -24,14 +24,5 @@ function buildDData(data) {
 
 export default new Router({
     mode: 'history',
-    routes: buildDData([
-        { title: '带视野限制的沼泽', num: 17 },
-        { title: '云朵', num: 22 },
-        { title: '隐藏台阶', num: 23 },
-        { title: '听音识曲', num: 24 },
-        { title: '选岔路', num: 27 },
-        { title: '老者问答', num: 39 },
-        { title: '忍耐考验', num: 42 },
-        { title: '终极忍耐', num: 48 },
-    ])
+    routes: buildDData(LayersData)
 })

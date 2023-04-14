@@ -18,8 +18,12 @@ body,
     height: 100%;
 }
 
+.el-row {
+    margin: 5px 2px;
+}
 
 .show-image {
     display: block;
-    max-width: 600px;
+    max-width: 500px;
+    margin: 5px 5px;
 }

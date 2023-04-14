@@ -1,8 +1,8 @@
 <template>
     <div style="max-width: 600px;">
         <el-row>
-            <el-autocomplete style="min-width: 500px;" :debounce="100" class="inline-input" v-model="state"
-                :fetch-suggestions="querySearch" placeholder="请输入NPC的问题" :trigger-on-focus="false" @select="handleSelect">
+            <el-autocomplete style="min-width: 600px;" :debounce="100" class="inline-input" v-model="state"
+                :fetch-suggestions="querySearch" placeholder="请输入NPC的问题(支持拼音首字母/简体/繁体)" :trigger-on-focus="false" @select="handleSelect">
                 <template slot-scope="{ item }">
                     <div class="name q">{{ item.q }}</div>
                 </template>

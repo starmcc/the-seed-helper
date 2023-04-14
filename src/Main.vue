@@ -1,17 +1,11 @@
 <template>
   <div id="app">
     <el-container class="container" style="height: 100%">
-      <el-aside width="150px">
+      <el-aside width="120px">
         <el-menu router background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
           <el-menu-item index="/">主页</el-menu-item>
-          <el-menu-item index="17">17层</el-menu-item>
-          <el-menu-item index="22">22层</el-menu-item>
-          <el-menu-item index="23">23层</el-menu-item>
-          <el-menu-item index="24">24层</el-menu-item>
-          <el-menu-item index="27">27层</el-menu-item>
-          <el-menu-item index="39">39层</el-menu-item>
-          <el-menu-item index="42">42层</el-menu-item>
-          <el-menu-item index="48">48层</el-menu-item>
+          <el-menu-item :index="item.num.toString()" v-for="(item, index) in layersData" :key="index">{{ item.num + '层'
+          }}</el-menu-item>
         </el-menu>
       </el-aside>
       <el-container>
@@ -25,11 +19,12 @@
 </template>
 
 <script>
+import LayersData from '@/commons/js/LayersData'
 export default {
   name: 'App',
-  created(){
-    console.info(this.$route.meta.title)
-  }
+  data: () => ({
+    layersData: LayersData
+  }),
 }
 </script>
 
